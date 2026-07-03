@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top right, #ffdde1, #ee9ca7);
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #881e3a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #881e3a, #ff4f93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Cards */
+.card {
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    margin-top: 35px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: #881e3a;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(136, 30, 58, 0.3);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background: #ff4f93;
+}
+
+/* Ending */
+.ending {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Hati */
+.heart {
+    position: fixed;
+    top: -20px;
+    font-size: 20px;
+    animation: fall linear forwards;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(360deg); }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .card { padding: 30px; }
+}
+/* --- Tambahan Efek Animasi Fade-In --- */
+.card {
+    animation: muncul 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes muncul {
+    from { 
+        opacity: 0; 
+        transform: translateY(40px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Adela Kusumalia ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hati Berjatuhan -->
+<div id="hearts"></div>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>❤️ Untuk Adela Kusumalia ❤️</h1>
+
+    <p>
+        Website ini aku buat khusus untuk seseorang yang sangat berarti buat aku.
+    </p>
+
+    <button onclick="scrollToSection('surat')">
+        Buka Hadiah 🎁
+    </button>
+</section>
+
+<!-- Surat -->
+<section id="surat" class="card">
+
+<h2>💌 Surat Untukmu</h2>
+
+<p id="teks-surat"
+Hai Adela...
+
+Terima kasih ya sudah hadir di hidup aku.
+
+Mungkin aku belum sesempurna yang kamu harapkan,
+belum sekece, sekeren, atau seganteng orang lain.
+
+Tapi aku janji akan terus belajar menjadi laki-laki
+yang lebih baik setiap harinya.
+
+Aku ingin selalu melihat kamu tersenyum,
+menemani kamu saat senang maupun susah.
+
+Semoga hubungan kita selalu dipenuhi kebahagiaan,
+kepercayaan, dan doa-doa baik.
+
+❤️
+</p>
+
+</section>
+
+<!-- Galeri -->
+<section class="card">
+
+<h2>📸 Galeri Harapan</h2>
+
+<p>
+
+Halaman ini sengaja aku kosongkan.
+
+Karena aku percaya,
+suatu hari nanti tempat ini akan dipenuhi
+foto-foto kita berdua.
+
+Aku berharap saat kita melihat halaman ini lagi,
+kita bisa tersenyum sambil berkata,
+
+<b>"Ternyata kita sudah punya banyak kenangan ya." ❤️</b>
+
+</p>
+
+</section>
+
+<!-- Harapan -->
+<section class="card">
+
+<h2>🌙 Harapan</h2>
+
+<p>
+
+Aku tidak tahu masa depan akan seperti apa.
+
+Tapi kalau boleh berharap,
+aku ingin terus berjalan bersama kamu.
+
+Semoga kita sama-sama diberi kesehatan,
+kebahagiaan,
+dan hubungan yang selalu dipenuhi rasa saling percaya.
+
+🤍
+
+</p>
+
+</section>
+
+<!-- Ending -->
+<section class="ending">
+
+<h1>I LOVE YOU ❤️</h1>
+
+<h2>ADELA KUSUMALIA</h2>
+
+<p>
+Terima kasih sudah menjadi bagian dari hidupku.
+Semoga ini bukan akhir,
+melainkan awal dari lebih banyak cerita indah kita.
+</p>
+
+<button onclick="loveMessage()">
+Klik Aku ❤️
+</button>
+
+</section>
+
+<script src="script.js"></script>
+<!-- Musik Latar -->
+<audio id="bgMusic" loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Tombol Play/Pause (Penting karena browser sering memblokir autoplay) -->
+<button onclick="toggleMusic()" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px 20px; border-radius: 20px; opacity: 0.7;">
+    🎵 Musik On/Off
+</button>
+
+<script>
+    function toggleMusic() {
+        const music = document.getElementById("bgMusic");
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
+</body>
+</html>
